@@ -62,7 +62,6 @@ router.post("/createPost", async (req, res) => {
         res.status(500).send({ errors: err })
     }
 
-    //생각 해보니  세이브 할떄 populate 할필요가 없다.   가져올떄 하면 되니깐...
     // blog.save((err, response) => {
     //     if (err) return res.json({ success: false, err });
     //     Blog.find({ _id: response._id })
@@ -78,8 +77,7 @@ router.post("/createPost", async (req, res) => {
 
 router.get("/getBlogs", async (req, res) => {
     try {
-        const blogs = await Blog.find()
-                                .populate("writer")
+        const blogs = await Blog.find().populate("writer")
         res.status(200).json({ success: true, blogs })
 
     } catch (err) {
@@ -89,8 +87,7 @@ router.get("/getBlogs", async (req, res) => {
 
 router.post("/getPost", async (req, res) => {
     try {
-        const post = await Blog.findById( req.body.postId )
-                                .populate('writer')
+        const post = await Blog.findById( req.body.postId ).populate('writer')
         res.status(200).json({ success: true, post })
 
     } catch (err) {
