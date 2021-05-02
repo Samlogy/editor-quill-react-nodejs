@@ -1,17 +1,21 @@
 const express = require("express")
 const cookieParser = require("cookie-parser")
+const cors = require('cors')
 
 // DB connection (Mongoose)
 require('./init_db')
 
 const app = express()
+
+app.use(express.json())
 app.use(cookieParser())
 
-// models
-// const BlogSchema = require('./blog.model')
-
 // Routes
-app.use('/api/blog', require('./blog.route'))
+const BlogRoutes = require('./blog.route')
+
+app.use('/api/blog', cors({
+  origin: [/http:\/\/localhost:\d+$/]
+}), BlogRoutes)
 
 
 //use this to show the image you have in node js server to client (react js)

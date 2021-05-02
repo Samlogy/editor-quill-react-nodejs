@@ -1,12 +1,11 @@
 import React, { useState } from "react";
-// import axios from "axios";
+import axios from "axios";
 // import { useSelector } from "react-redux";
 
 import Editor from './Editor'
-// import MyEditor from './MyEditor.jsx'
 import 'react-quill/dist/quill.snow.css';
 
-function CreatePage(props) {
+const CreatePage = () => {
   // get user data from store
   // const user = useSelector(state => state.user);
 
@@ -35,17 +34,17 @@ function CreatePage(props) {
     console.log(variables)
 
     // API call --> create Post
-    // axios.post("/api/blog/createPost", variables).then((response) => {
-    //   if (response) {
-    //     // message.success("Post Created!");
-    //     console.log("Notif --> Post Created !");
+    axios.post("http://localhost:5000/api/blog/createPost", variables).then((response) => {
+      if (response) {;
+        console.log("Notif --> Post Created !");
+        console.log(response.data)
 
-    //     // setTimeout(() => {
-    //     //   history.push('/Blog')
-    //     // }, 2000);
-    //   }
-    // });
-  };
+        // setTimeout(() => {
+        //   history.push('/Blog')
+        // }, 2000);
+      }
+    })
+  }
 
   return (
     <div style={{ maxWidth: "700px", margin: "2rem auto" }}>

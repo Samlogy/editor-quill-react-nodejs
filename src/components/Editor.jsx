@@ -56,7 +56,6 @@ class Clipboard extends QuillClipboard {
           .catch((error) => console.error(error));
       });
     } else {
-      //console.log('when to use this') 보통 다른 곳에서  paste 한다음에  copy하면 이쪽 걸로 한다.
       super.onPaste(e);
     }
   }
@@ -251,7 +250,7 @@ class Editor extends React.Component {
       };
       formData.append("file", file);
 
-      axios.post("/api/blog/uploadfiles", formData, config).then((response) => {
+      axios.post("http://localhost:5000/api/blog/uploadfiles", formData, config).then((response) => {
         if (response.data.success) {
           const quill = this.reactQuillRef.getEditor();
           quill.focus();
@@ -301,7 +300,7 @@ class Editor extends React.Component {
       };
       formData.append("file", file);
 
-      axios.post("/api/blog/uploadfiles", formData, config).then((response) => {
+      axios.post("http://localhost:5000/api/blog/uploadfiles", formData, config).then((response) => {
         if (response.data.success) {
           const quill = this.reactQuillRef.getEditor();
           quill.focus();
@@ -349,7 +348,7 @@ class Editor extends React.Component {
       };
       formData.append("file", file);
 
-      axios.post("/api/blog/uploadfiles", formData, config).then((response) => {
+      axios.post("http://localhost:5000/api/blog/uploadfiles", formData, config).then((response) => {
         if (response.data.success) {
           const quill = this.reactQuillRef.getEditor();
           quill.focus();
