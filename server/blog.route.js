@@ -46,6 +46,17 @@ router.post("/uploadfiles", async (req, res) => {
                         fileName: res.req.file.filename 
                     })
     })
+    // try {
+    //     const uploaded = await upload()
+    //     res.json({ 
+    //         success: true, 
+    //         url: uploaded.req.file.path, 
+    //         fileName: uploaded.req.file.filename 
+    //     })
+
+    // } catch (err) {
+    //     res.json({ success: false, err })
+    // }
 })
 
 router.post("/createPost", async (req, res) => {
@@ -61,21 +72,9 @@ router.post("/createPost", async (req, res) => {
     } catch (err) {
         res.status(500).send({ errors: err })
     }
-
-    // blog.save((err, response) => {
-    //     if (err) return res.json({ success: false, err });
-    //     Blog.find({ _id: response._id })
-    //         .populate('writer')
-    //         .exec((err, result) => {
-    //             let postInfo = result[0]
-    //             if (err) return res.json({ success: false, err });
-    //             return res.status(200).json({ success: true,  postInfo });
-    //         })
-    // })
 })
 
-
-router.get("/getBlogs", async (req, res) => {
+router.get("/getBlogs", async (req, res) => { // get all blogs from the same author
     try {
         const blogs = await Blog.find().populate("writer")
         res.status(200).json({ success: true, blogs })
@@ -85,7 +84,7 @@ router.get("/getBlogs", async (req, res) => {
     }
 })
 
-router.post("/getPost", async (req, res) => {
+router.post("/getPost", async (req, res) => { // get a single post (postId)
     try {
         const post = await Blog.findById( req.body.postId ).populate('writer')
         res.status(200).json({ success: true, post })

@@ -28,6 +28,7 @@ const CreatePage = () => {
 
     const variables = {
       content: content,
+      files: files,
       userID: "user id"
     };
 
@@ -35,7 +36,7 @@ const CreatePage = () => {
 
     // API call --> create Post
     axios.post("http://localhost:5000/api/blog/createPost", variables).then((response) => {
-      if (response) {;
+      if (response) {
         console.log("Notif --> Post Created !");
         console.log(response.data)
 

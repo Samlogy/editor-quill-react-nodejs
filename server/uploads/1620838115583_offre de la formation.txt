@@ -1,0 +1,82 @@
+Nous proposons une formation accélérée avec un suivie individuel pour vous immerger dans le monde du developpement web en partant des concepts de bases jusqu'au plus avancé, afin de vous permettre d'assimiler de nouvelles notions de maniére simple, et ludique.
+
+Cette formation est orienté pratique et encadrer par l'instructeur.
+ 
+Vous apprendrez au cours de cette formation les bases du web avec d'abord HTML 5 (pour créér le squellete de votre site web), puis CSS 3 (pour ajouter du style à ce dernier), afin de devenir plus autonome, et developper vos premiers site web sous HTML 5 & CSS 3.
+
+Pour que le web n'est plus de secret pour vous contactez nous dès maintenant.
+
+PREREQUIS :
+- Ordinateur + microphone.
+
+**** Pt1 ****:  (balises HTML5)
++ Qu'est ce que html ? à quoi ça sert ? qu'est ce que le web ? et comment ça fonctionne ?
++ Les balises HTML à connaître.
++ Ajouter des paragraphes, et des titres.
+	Exo: Notre premiére page web.
++ Ajouter Commentaire sous html.
++ Crééz des liens.
++ Inserer des images.
++ Ajouter des listes.
++ Les tableaux.
+	Exo: Inserer un tableau.
++ Créez un formulaire.
+	Exo: Inserer un Formulaire.
++ Div et span.
+	Exo: inserer bloc contenant.
+
+** Projet Fin de Partie **: 
+	Exo: Représentation de la structure d'une maquette en utilisant les notions apprisent HTML5 en employant les bonnes pratiques
+	(Header, ... Footer / ajouter des commentaires explicite / structurer son code maniére lisible)
+	
+**** Pt2 ****:  (ajouter du style --> CSS3)
++ qu'est ce que le css ? comment ajouter du style à notre style à notre site html ?
++ les selectors #1 partie (element selector, class selector, id selector, universal selector, grouping selector).
++ les commentaires sous css.
++ styler nos textes, titres, et liens.
+(text-align, color, background-color, text-shadow, letter-spacing, text-transform, text-decoration, font).
++ styler nos listes. (list-style).
++ ajouter des icons.
++ ajouter des bordure, marges intérieur et extérieur. (border, margin et padding).
++ box model (float/clear, overflow, display, visibility, rotation, height/width).
++ Positioner un élément (top/..., position, z-index).
++ les selectors #2 partie (pseudo classes, combinators, pseudo element).
++ styler nos tables.
++ les Flex Box.
+	Exo: restructurer le site html avec les flex box.
+
++ styler nos formulaires.
++ bordure arrondi.
++ transform (2D / 3D).
++ transitions.
++ animations.
++ box-sizing.
++ les variables.
+
+
+*** Pt3 ****: (Responsive Web Design).
++ qu'est ce que c'est le reponsive web design ? à quoi ça sert ? ou l'utiliser ?
++ viewport.
++ grid view.
++ Introduction au grid.
++ media queries (max / min, device type, orientation)
++ Mobile first vs desktop first.
++ relative units vs static units.
++ Example réel de responsive web design.
+ Exo: ajouter du responsive à notre site.
+
+
+*** Projet Final ***:
++ réalisation d'un site web statique par l'apprenant et assister si nécéssaire.
+ # Site Entiérement responsive supports (Mobile - Tablette - Desktop) 
+ # Code Structurer / Commenter / Fichiers organisés.
+
+*** What's next ? ***
+
+La formation est centrée sur un projet individuel à réaliser avec l'instructeur afin de mettre en pratique les compétences acquises.
+
+Durée de la formation adaptable selon l'étudiant.
+
+RAPPEL : La formation se déroule entièrement EN LIGNE par appel vocal ou visioconférence
+
+N'hésitez pas à prendre contact pour plus d'informations.
